@@ -1,5 +1,11 @@
 import React from 'react';
+import Tetris from "./components/Tetris";
 
+const App = () => (
+  <div className="App">
+    <Tetris />
+  </div>
+);
 
 // function App() {
 //   return (
@@ -9,4 +15,4 @@ import React from 'react';
 //   );
 // }
 
-// export default App;
+export default App;
