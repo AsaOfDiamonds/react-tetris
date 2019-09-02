@@ -55,12 +55,14 @@ const Tetris = () => {
     if(!gameOver) {
       // keycode 40 is down key
       if(keyCode === 40) {
+        console.log('interval on')
         setDropTime(1000);
       }
     }
   }
 
   const dropPlayer = () => {
+    console.log('interval off')
     // stop interval when play moves the tetromino with down arrow on keyboard
     setDropTime(null);
     drop();
@@ -92,7 +94,7 @@ const Tetris = () => {
         onKeyDown={e => move(e)} 
         onKeyUp={keyUp}
         >
-        
+
       <StyledTetris>
         <Stage stage={stage} />
         <aside>
